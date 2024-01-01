@@ -1,0 +1,79 @@
+// Approach 1
+// make only 9 divs on one page
+// when user scroll it shows the loader animaition
+// next 9divs should be visible/shown
+// now when the user scrolls up the divs above the current page is visible
+// meaning there are only 9 divs and all the items that are coming should get updated
+
+//issue here -> when user wants to scroll up fast to the page 1 then it should go fast rather than loading the animation(loader)
+
+
+// Approach 2
+// make a main div(item) container
+// the items that are visible right now at the screen will be ther updated at the dom
+
+// issue here-> when user want to scroll up then how fast the dom has to be updated. items will dynamically be added on the DOM.
+
+
+
+// Approach for infinite scroll. tell me how is this?
+
+// load 20 items first 
+// when user scrolls down then it should append next items(for this we will give a static final valu of total items)
+// and items which are not in the viewport it will be removed from DOM.
+// when user scrolls up then he/she should get the original items. so here also we have to append/update the dom.
+// and at the last when all the items are finished it should show the end of contents message.
+
+
+questions?
+- how to have memory for js element nodes.
+- how to scroll and append simultaneously 
+- how to remove element from DOM? which conditions(height of element, size of element)
+- how to know that which element will be coming when scrolling above.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="card-item"><p>1</p></div>
+  <div class="card-item"><p>2</p></div>
+  <div class="card-item">3</div>
+  <div class="card-item">4</div>
+  <div class="card-item">5</div>
+  <div class="card-item">6</div>
+  <div class="card-item">7</div>
+  <div class="card-item">8</div>
+  <div class="card-item">9</div>
+  <div class="card-item">10</div>
+  <div class="card-item">11</div>
+  <div class="card-item">12</div>
+  <div class="card-item">13</div>
+  <div class="card-item">14</div>
+  <div class="card-item">15</div>
+  <div class="card-item">16</div>
+  <div class="card-item">17</div>
+  <div class="card-item">18</div>
+  <div class="card-item">19</div>
+  <div class="card-item">20</div> -->
